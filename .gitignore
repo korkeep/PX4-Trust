@@ -1,2 +1,5 @@
-# ignore Nuvoton tool-kit
+# ignore documents
+Document
+
+# ignore nuvoton tool-kit
 Nuvoton

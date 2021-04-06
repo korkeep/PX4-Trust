@@ -1,0 +1,28 @@
+#! armclang --target=arm-arm-none-eabi -march=armv8-m.base -E -xc
+#define SCATTER_FILE
+#include "..\..\NuBL32\partition_M2351.h"
+
+; 384~512KB (Non-secure code)
+NS_ROM FMC_NON_SECURE_BASE
+{
+    EXE_ROM +0  0x20000
+    {
+        *.o(RESET, +First)
+        *(+RO)
+    }
+    
+    ; 64~96KB~
+    EXE_RAM NON_SECURE_SRAM_BASE
+    {
+        *(+RW, +ZI)
+    }	
+}
+
+; 192KB~
+FWINFO_REGION   FMC_NON_SECURE_BASE+0x10000  352
+{
+    FWINFO +0
+    {
+        NuBL33_FwInfo.o
+    }
+}

@@ -1,0 +1,25 @@
+--cpu=Cortex-M23
+"..\..\Secure\nsclib.o"
+".\output\retarget.o"
+".\output\startup_m2351.o"
+".\output\system_m2351.o"
+".\output\timers.o"
+".\output\list.o"
+".\output\queue.o"
+".\output\tasks.o"
+".\output\heap_4.o"
+".\output\port.o"
+".\output\main.o"
+".\output\main-blinky.o"
+".\output\main-full.o"
+".\output\partest_m2351.o"
+".\output\regtest_keil.o"
+".\output\dynamic.o"
+".\output\recmutex.o"
+".\output\blocktim.o"
+".\output\countsem.o"
+".\output\queueset.o"
+".\output\queueoverwrite.o"
+--library_type=microlib --ro-base 0x10040000 --entry 0x10040000 --rw-base 0x30010000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --load_addr_map_info
+--info sizes --info totals --info veneers
+--list ".\RTOSDemo.map" -o .\Output\RTOSDemo.axf

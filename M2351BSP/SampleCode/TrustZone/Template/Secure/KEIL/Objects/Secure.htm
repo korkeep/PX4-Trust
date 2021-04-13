@@ -1,0 +1,1061 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\Objects\Secure.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\Objects\Secure.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6150002: Last Updated: Mon Apr 12 14:43:23 2021
+<BR><P>
+<H3>Maximum Stack Usage =        504 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+ProcessHardFault &rArr; SCU_IRQHandler &rArr; printf
+<P>
+<H3>
+Functions with no stack information
+</H3><UL>
+ <LI><a href="#[6b]">Secure_LED_Off</a>
+ <LI><a href="#[6c]">Secure_LED_Off_callback</a>
+ <LI><a href="#[6d]">Secure_LED_On</a>
+ <LI><a href="#[6e]">Secure_LED_On_callback</a>
+ <LI><a href="#[6f]">Secure_func</a>
+ <LI><a href="#[70]">CLK_GetCPUFreq</a>
+ <LI><a href="#[71]">CLK_GetHCLKFreq</a>
+ <LI><a href="#[72]">CLK_GetHXTFreq</a>
+ <LI><a href="#[73]">CLK_GetLXTFreq</a>
+ <LI><a href="#[74]">CLK_GetModuleClockDivider</a>
+ <LI><a href="#[75]">CLK_GetModuleClockSource</a>
+ <LI><a href="#[76]">CLK_GetPCLK0Freq</a>
+ <LI><a href="#[77]">CLK_GetPCLK1Freq</a>
+ <LI><a href="#[78]">CLK_GetPLLClockFreq</a>
+</UL>
+</UL>
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[1]">NMI_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1]">NMI_Handler</a><BR>
+ <LI><a href="#[3]">SVC_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[3]">SVC_Handler</a><BR>
+ <LI><a href="#[4]">PendSV_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[4]">PendSV_Handler</a><BR>
+ <LI><a href="#[32]">ACMP01_IRQHandler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[32]">ACMP01_IRQHandler</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[32]">ACMP01_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[6]">BOD_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[4b]">BPWM0_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[4c]">BPWM1_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[1e]">BRAKE0_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[22]">BRAKE1_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[3c]">CAN0_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[a]">CLKFAIL_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[44]">CRPT_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[2f]">DAC_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[b]">DEFAULT_IRQHandler</a> from startup_m2351.o(.text) referenced 22 times from startup_m2351.o(RESET)
+ <LI><a href="#[30]">EADC0_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[31]">EADC1_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[33]">EADC2_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[34]">EADC3_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[50]">ECAP0_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[51]">ECAP1_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[10]">EINT0_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[11]">EINT1_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[12]">EINT2_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[13]">EINT3_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[14]">EINT4_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[15]">EINT5_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[46]">EINT6_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[53]">EINT7_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[1f]">EPWM0_P0_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[20]">EPWM0_P1_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[21]">EPWM0_P2_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[23]">EPWM1_P0_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[24]">EPWM1_P1_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[25]">EPWM1_P2_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[16]">GPA_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[17]">GPB_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[18]">GPC_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[19]">GPD_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[1a]">GPE_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[1b]">GPF_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[45]">GPG_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[52]">GPH_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[2]">HardFault_Handler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[2c]">I2C0_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[2d]">I2C1_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[4d]">I2C2_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[42]">I2S0_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[7]">IRC_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[1]">NMI_Handler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[43]">OPA0_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[2e]">PDMA0_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[54]">PDMA1_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[8]">PWRWU_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[4]">PendSV_Handler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[5a]">ProcessHardFault</a> from retarget.o(.text.ProcessHardFault) referenced from startup_m2351.o(.text)
+ <LI><a href="#[4e]">QEI0_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[4f]">QEI1_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[1c]">QSPI0_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[c]">RTC_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[0]">Reset_Handler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[3d]">SC0_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[3e]">SC1_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[3f]">SC2_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[55]">SCU_IRQHandler</a> from system_m2351.o(.text.SCU_IRQHandler) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[41]">SDH0_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[5b]">SH_Return</a> from retarget.o(.text.SH_Return) referenced from startup_m2351.o(.text)
+ <LI><a href="#[1d]">SPI0_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[37]">SPI1_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[38]">SPI2_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[40]">SPI3_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[9]">SRAM_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[3]">SVC_Handler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[5]">SysTick_Handler</a> from main.o(.text.SysTick_Handler) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[58]">SystemInit</a> from system_m2351.o(.text.SystemInit) referenced from startup_m2351.o(.text)
+ <LI><a href="#[d]">TAMPER_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[26]">TMR0_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[27]">TMR1_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[28]">TMR2_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[29]">TMR3_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[56]">TRNG_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[2a]">UART0_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[2b]">UART1_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[35]">UART2_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[36]">UART3_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[47]">UART4_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[48]">UART5_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[39]">USBD_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[3a]">USBH_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[3b]">USBOTG_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[49]">USCI0_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[4a]">USCI1_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[e]">WDT_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[f]">WWDT_IRQHandler</a> from startup_m2351.o(.text) referenced from startup_m2351.o(RESET)
+ <LI><a href="#[59]">__main</a> from entry.o(.ARM.Collect$$$$00000000) referenced from startup_m2351.o(.text)
+ <LI><a href="#[5c]">fputc</a> from retarget.o(.text.fputc) referenced from printfa.o(i.__0printf)
+ <LI><a href="#[57]">main</a> from main.o(.text.main) referenced from entry9a.o(.ARM.Collect$$$$0000000B)
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[59]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(.text)
+</UL>
+<P><STRONG><a name="[ab]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+
+<P><STRONG><a name="[79]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[8a]"></a>__main_after_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[ac]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
+
+<P><STRONG><a name="[ad]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
+
+<P><STRONG><a name="[ae]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
+
+<P><STRONG><a name="[af]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
+
+<P><STRONG><a name="[b0]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
+
+<P><STRONG><a name="[0]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[1]"></a>NMI_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[2]"></a>HardFault_Handler</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[3]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[4]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[32]"></a>ACMP01_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ACMP01_IRQHandler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ACMP01_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[6]"></a>BOD_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[4b]"></a>BPWM0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[4c]"></a>BPWM1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[1e]"></a>BRAKE0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[22]"></a>BRAKE1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[3c]"></a>CAN0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[b1]"></a>CAN1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text), UNUSED)
+
+<P><STRONG><a name="[a]"></a>CLKFAIL_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[44]"></a>CRPT_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[2f]"></a>DAC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[b]"></a>DEFAULT_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[30]"></a>EADC0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[31]"></a>EADC1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[33]"></a>EADC2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[34]"></a>EADC3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[50]"></a>ECAP0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[51]"></a>ECAP1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[10]"></a>EINT0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[11]"></a>EINT1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[12]"></a>EINT2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[13]"></a>EINT3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[14]"></a>EINT4_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[15]"></a>EINT5_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[46]"></a>EINT6_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[53]"></a>EINT7_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[1f]"></a>EPWM0_P0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[20]"></a>EPWM0_P1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[21]"></a>EPWM0_P2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[23]"></a>EPWM1_P0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[24]"></a>EPWM1_P1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[25]"></a>EPWM1_P2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[16]"></a>GPA_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[17]"></a>GPB_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[18]"></a>GPC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[19]"></a>GPD_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[1a]"></a>GPE_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[1b]"></a>GPF_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[45]"></a>GPG_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[52]"></a>GPH_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[2c]"></a>I2C0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[2d]"></a>I2C1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[4d]"></a>I2C2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[42]"></a>I2S0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[7]"></a>IRC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[43]"></a>OPA0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[2e]"></a>PDMA0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[54]"></a>PDMA1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[8]"></a>PWRWU_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[4e]"></a>QEI0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[4f]"></a>QEI1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[1c]"></a>QSPI0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[c]"></a>RTC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[3d]"></a>SC0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[3e]"></a>SC1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[3f]"></a>SC2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[b2]"></a>SC3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text), UNUSED)
+
+<P><STRONG><a name="[41]"></a>SDH0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[b3]"></a>SDH1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text), UNUSED)
+
+<P><STRONG><a name="[1d]"></a>SPI0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[37]"></a>SPI1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[38]"></a>SPI2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[40]"></a>SPI3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[9]"></a>SRAM_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[d]"></a>TAMPER_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[26]"></a>TMR0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[27]"></a>TMR1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[28]"></a>TMR2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[29]"></a>TMR3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[56]"></a>TRNG_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[2a]"></a>UART0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[2b]"></a>UART1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[35]"></a>UART2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[36]"></a>UART3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[47]"></a>UART4_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[48]"></a>UART5_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[39]"></a>USBD_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[3a]"></a>USBH_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[3b]"></a>USBOTG_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[49]"></a>USCI0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[4a]"></a>USCI1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[e]"></a>WDT_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[f]"></a>WWDT_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_m2351.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[b4]"></a>SH_DoCommand</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, startup_m2351.o(.text), UNUSED)
+
+<P><STRONG><a name="[b5]"></a>__PC</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, startup_m2351.o(.text), UNUSED)
+
+<P><STRONG><a name="[95]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCU_IRQHandler
+</UL>
+
+<P><STRONG><a name="[94]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCU_IRQHandler
+</UL>
+
+<P><STRONG><a name="[b6]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+
+<P><STRONG><a name="[7c]"></a>__aeabi_memset</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset$wrapper
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+</UL>
+
+<P><STRONG><a name="[b7]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[b8]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[7b]"></a>__aeabi_memclr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+</UL>
+
+<P><STRONG><a name="[93]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCU_IRQHandler
+</UL>
+
+<P><STRONG><a name="[b9]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[7d]"></a>_memset$wrapper</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, memseta.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+</UL>
+
+<P><STRONG><a name="[7e]"></a>__aeabi_uldivmod</STRONG> (Thumb, 96 bytes, Stack size 48 bytes, uldiv.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[ba]"></a>__I$use$fp</STRONG> (Thumb, 0 bytes, Stack size 48 bytes, iusefp.o(.text), UNUSED)
+
+<P><STRONG><a name="[81]"></a>__aeabi_dadd</STRONG> (Thumb, 328 bytes, Stack size 48 bytes, dadd.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_lasr
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[85]"></a>__aeabi_dsub</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, dadd.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+</UL>
+
+<P><STRONG><a name="[86]"></a>__aeabi_drsub</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, dadd.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+</UL>
+
+<P><STRONG><a name="[87]"></a>__aeabi_dmul</STRONG> (Thumb, 202 bytes, Stack size 72 bytes, dmul.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[88]"></a>__aeabi_ddiv</STRONG> (Thumb, 234 bytes, Stack size 40 bytes, ddiv.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[89]"></a>__aeabi_d2ulz</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, dfixul.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[a7]"></a>__aeabi_cdrcmple</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, cdrcmple.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+
+<P><STRONG><a name="[7a]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload
+</UL>
+<BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
+</UL>
+
+<P><STRONG><a name="[bb]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+
+<P><STRONG><a name="[bc]"></a>__aeabi_uidiv$div0</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, uidiv_div0.o(.text), UNUSED)
+
+<P><STRONG><a name="[aa]"></a>__aeabi_uidivmod</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, uidiv_div0.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[80]"></a>__aeabi_llsl</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, llshl.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
+</UL>
+
+<P><STRONG><a name="[bd]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, llshl.o(.text), UNUSED)
+
+<P><STRONG><a name="[7f]"></a>__aeabi_llsr</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, llushr.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
+</UL>
+
+<P><STRONG><a name="[be]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, llushr.o(.text), UNUSED)
+
+<P><STRONG><a name="[82]"></a>__aeabi_lasr</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, llsshr.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+</UL>
+
+<P><STRONG><a name="[bf]"></a>_ll_sshift_r</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, llsshr.o(.text), UNUSED)
+
+<P><STRONG><a name="[84]"></a>_double_round</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, depilogue.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+</UL>
+
+<P><STRONG><a name="[83]"></a>_double_epilogue</STRONG> (Thumb, 164 bytes, Stack size 48 bytes, depilogue.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_clz
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
+</UL>
+<BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+</UL>
+
+<P><STRONG><a name="[c0]"></a>__decompress</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+
+<P><STRONG><a name="[c1]"></a>__decompress1</STRONG> (Thumb, 86 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+
+<P><STRONG><a name="[8c]"></a>Boot_Init</STRONG> (Thumb, 276 bytes, Stack size 40 bytes, main.o(.text.Boot_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = Boot_Init &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[62]"></a>__acle_se_CLK_GetCPUFreq</STRONG> (Thumb, 0 bytes, Stack size 88 bytes, clk.o(.text.CLK_GetCPUFreq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = __acle_se_CLK_GetCPUFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLK_GetCPUFreq
+</UL>
+
+<P><STRONG><a name="[63]"></a>__acle_se_CLK_GetHCLKFreq</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, clk.o(.text.CLK_GetHCLKFreq), UNUSED, KEPT)
+<BR><BR>[Stack]<UL><LI>Max Depth = 104 + Unknown Stack Size
+<LI>Call Chain = __acle_se_CLK_GetHCLKFreq &rArr; SystemCoreClockUpdate &rArr; CLK_GetCPUFreq &rArr; __acle_se_CLK_GetCPUFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemCoreClockUpdate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLK_GetHCLKFreq
+</UL>
+
+<P><STRONG><a name="[64]"></a>__acle_se_CLK_GetHXTFreq</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, clk.o(.text.CLK_GetHXTFreq), UNUSED, KEPT)
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __acle_se_CLK_GetHXTFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLK_GetHXTFreq
+</UL>
+
+<P><STRONG><a name="[65]"></a>__acle_se_CLK_GetLXTFreq</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, clk.o(.text.CLK_GetLXTFreq), UNUSED, KEPT)
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __acle_se_CLK_GetLXTFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLK_GetLXTFreq
+</UL>
+
+<P><STRONG><a name="[66]"></a>__acle_se_CLK_GetModuleClockDivider</STRONG> (Thumb, 0 bytes, Stack size 28 bytes, clk.o(.text.CLK_GetModuleClockDivider), UNUSED, KEPT)
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = __acle_se_CLK_GetModuleClockDivider
+</UL>
+<BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLK_GetModuleClockDivider
+</UL>
+
+<P><STRONG><a name="[67]"></a>__acle_se_CLK_GetModuleClockSource</STRONG> (Thumb, 0 bytes, Stack size 28 bytes, clk.o(.text.CLK_GetModuleClockSource), UNUSED, KEPT)
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = __acle_se_CLK_GetModuleClockSource
+</UL>
+<BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLK_GetModuleClockSource
+</UL>
+
+<P><STRONG><a name="[68]"></a>__acle_se_CLK_GetPCLK0Freq</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, clk.o(.text.CLK_GetPCLK0Freq), UNUSED, KEPT)
+<BR><BR>[Stack]<UL><LI>Max Depth = 104 + Unknown Stack Size
+<LI>Call Chain = __acle_se_CLK_GetPCLK0Freq &rArr; SystemCoreClockUpdate &rArr; CLK_GetCPUFreq &rArr; __acle_se_CLK_GetCPUFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemCoreClockUpdate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLK_GetPCLK0Freq
+</UL>
+
+<P><STRONG><a name="[69]"></a>__acle_se_CLK_GetPCLK1Freq</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, clk.o(.text.CLK_GetPCLK1Freq), UNUSED, KEPT)
+<BR><BR>[Stack]<UL><LI>Max Depth = 104 + Unknown Stack Size
+<LI>Call Chain = __acle_se_CLK_GetPCLK1Freq &rArr; SystemCoreClockUpdate &rArr; CLK_GetCPUFreq &rArr; __acle_se_CLK_GetCPUFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemCoreClockUpdate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLK_GetPCLK1Freq
+</UL>
+
+<P><STRONG><a name="[6a]"></a>__acle_se_CLK_GetPLLClockFreq</STRONG> (Thumb, 0 bytes, Stack size 28 bytes, clk.o(.text.CLK_GetPLLClockFreq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = __acle_se_CLK_GetPLLClockFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLK_GetPLLClockFreq
+</UL>
+
+<P><STRONG><a name="[a0]"></a>DEBUG_PORT_Init</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, main.o(.text.DEBUG_PORT_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[8f]"></a>FMC_NSBA_Setup</STRONG> (Thumb, 192 bytes, Stack size 8 bytes, system_m2351.o(.text.FMC_NSBA_Setup))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = FMC_NSBA_Setup
+</UL>
+<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYS_UnlockReg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+
+<P><STRONG><a name="[a1]"></a>GPIO_SetMode</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, gpio.o(.text.GPIO_SetMode))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = GPIO_SetMode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[91]"></a>LED_Off</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, main.o(.text.LED_Off))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = LED_Off &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+
+<P><STRONG><a name="[92]"></a>LED_On</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, main.o(.text.LED_On))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = LED_On &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+
+<P><STRONG><a name="[9e]"></a>NSC_Init</STRONG> (Thumb, 72 bytes, Stack size 12 bytes, system_m2351.o(.text.NSC_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = NSC_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TZ_SAU_Setup
+</UL>
+
+<P><STRONG><a name="[5a]"></a>ProcessHardFault</STRONG> (Thumb, 1696 bytes, Stack size 312 bytes, retarget.o(.text.ProcessHardFault))
+<BR><BR>[Stack]<UL><LI>Max Depth = 504<LI>Call Chain = ProcessHardFault &rArr; SCU_IRQHandler &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCU_IRQHandler
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(.text)
+</UL>
+<P><STRONG><a name="[55]"></a>SCU_IRQHandler</STRONG> (Thumb, 220 bytes, Stack size 168 bytes, system_m2351.o(.text.SCU_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 192<LI>Call Chain = SCU_IRQHandler &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProcessHardFault
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[96]"></a>SCU_Setup</STRONG> (Thumb, 172 bytes, Stack size 16 bytes, system_m2351.o(.text.SCU_Setup))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = SCU_Setup &rArr; __NVIC_EnableIRQ
+</UL>
+<BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_EnableIRQ
+</UL>
+<BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+
+<P><STRONG><a name="[5b]"></a>SH_Return</STRONG> (Thumb, 14 bytes, Stack size 12 bytes, retarget.o(.text.SH_Return))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = SH_Return
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(.text)
+</UL>
+<P><STRONG><a name="[98]"></a>SYS_Init</STRONG> (Thumb, 204 bytes, Stack size 32 bytes, main.o(.text.SYS_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128 + Unknown Stack Size
+<LI>Call Chain = SYS_Init &rArr; SystemCoreClockUpdate &rArr; CLK_GetCPUFreq &rArr; __acle_se_CLK_GetCPUFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemCoreClockUpdate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[5d]"></a>__acle_se_Secure_LED_Off</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, main.o(.text.Secure_LED_Off), UNUSED, KEPT)
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = __acle_se_Secure_LED_Off &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Secure_LED_Off
+</UL>
+
+<P><STRONG><a name="[5e]"></a>__acle_se_Secure_LED_Off_callback</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, main.o(.text.Secure_LED_Off_callback), UNUSED, KEPT)
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __acle_se_Secure_LED_Off_callback
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Secure_LED_Off_callback
+</UL>
+
+<P><STRONG><a name="[5f]"></a>__acle_se_Secure_LED_On</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, main.o(.text.Secure_LED_On), UNUSED, KEPT)
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = __acle_se_Secure_LED_On &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Secure_LED_On
+</UL>
+
+<P><STRONG><a name="[60]"></a>__acle_se_Secure_LED_On_callback</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, main.o(.text.Secure_LED_On_callback), UNUSED, KEPT)
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __acle_se_Secure_LED_On_callback
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Secure_LED_On_callback
+</UL>
+
+<P><STRONG><a name="[61]"></a>__acle_se_Secure_func</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, main.o(.text.Secure_func), UNUSED, KEPT)
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = __acle_se_Secure_func &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Secure_func
+</UL>
+
+<P><STRONG><a name="[99]"></a>SendChar</STRONG> (Thumb, 16 bytes, Stack size 16 bytes, retarget.o(.text.SendChar))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = SendChar &rArr; SendChar_ToUART
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendChar_ToUART
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputc
+</UL>
+
+<P><STRONG><a name="[9a]"></a>SendChar_ToUART</STRONG> (Thumb, 72 bytes, Stack size 4 bytes, retarget.o(.text.SendChar_ToUART))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = SendChar_ToUART
+</UL>
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendChar
+</UL>
+
+<P><STRONG><a name="[5]"></a>SysTick_Handler</STRONG> (Thumb, 272 bytes, Stack size 24 bytes, main.o(.text.SysTick_Handler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = SysTick_Handler &rArr; LED_On &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_On
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Off
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(RESET)
+</UL>
+<P><STRONG><a name="[8e]"></a>SystemCoreClockUpdate</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, system_m2351.o(.text.SystemCoreClockUpdate))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96 + Unknown Stack Size
+<LI>Call Chain = SystemCoreClockUpdate &rArr; CLK_GetCPUFreq &rArr; __acle_se_CLK_GetCPUFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLK_GetPLLClockFreq
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLK_GetCPUFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYS_Init
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__acle_se_CLK_GetPCLK1Freq
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__acle_se_CLK_GetPCLK0Freq
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__acle_se_CLK_GetHCLKFreq
+</UL>
+
+<P><STRONG><a name="[58]"></a>SystemInit</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, system_m2351.o(.text.SystemInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = SystemInit &rArr; TZ_SAU_Setup &rArr; NSC_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TZ_SAU_Setup
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCU_Setup
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FMC_NSBA_Setup
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_m2351.o(.text)
+</UL>
+<P><STRONG><a name="[9d]"></a>TZ_SAU_Setup</STRONG> (Thumb, 156 bytes, Stack size 8 bytes, system_m2351.o(.text.TZ_SAU_Setup))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = TZ_SAU_Setup &rArr; NSC_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NSC_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+
+<P><STRONG><a name="[5c]"></a>fputc</STRONG> (Thumb, 20 bytes, Stack size 16 bytes, retarget.o(.text.fputc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = fputc &rArr; SendChar &rArr; SendChar_ToUART
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendChar
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> printfa.o(i.__0printf)
+</UL>
+<P><STRONG><a name="[57]"></a>main</STRONG> (Thumb, 160 bytes, Stack size 40 bytes, main.o(.text.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 168 + Unknown Stack Size
+<LI>Call Chain = main &rArr; SYS_Init &rArr; SystemCoreClockUpdate &rArr; CLK_GetCPUFreq &rArr; __acle_se_CLK_GetCPUFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XOM1_Func
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;XOM0_Func
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYS_Init
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetMode
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEBUG_PORT_Init
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Boot_Init
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Config
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYS_UnlockReg
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printf
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
+</UL>
+<P><STRONG><a name="[a4]"></a>__0printf</STRONG> (Thumb, 24 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[c2]"></a>__1printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
+
+<P><STRONG><a name="[c3]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
+
+<P><STRONG><a name="[c4]"></a>__c89printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
+
+<P><STRONG><a name="[8d]"></a>printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__acle_se_Secure_func
+<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__acle_se_Secure_LED_On
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__acle_se_Secure_LED_Off
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_On
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Off
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Boot_Init
+<LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProcessHardFault
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCU_IRQHandler
+</UL>
+
+<P><STRONG><a name="[8b]"></a>__ARM_clz</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, depilogue.o(i.__ARM_clz), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+</UL>
+
+<P><STRONG><a name="[c5]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+
+<P><STRONG><a name="[c6]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+
+<P><STRONG><a name="[c7]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+
+<P><STRONG><a name="[6b]"></a>Secure_LED_Off</STRONG> (Thumb, 8 bytes, Stack size unknown bytes, anon$$obj.o(Veneer$$CMSE), UNUSED, KEPT)
+<BR><BR>[Stack]<UL><LI>Max Depth = 40 + Unknown Stack Size
+<LI>Call Chain = Secure_LED_Off &rArr; __acle_se_Secure_LED_Off &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__acle_se_Secure_LED_Off
+</UL>
+
+<P><STRONG><a name="[6c]"></a>Secure_LED_Off_callback</STRONG> (Thumb, 8 bytes, Stack size unknown bytes, anon$$obj.o(Veneer$$CMSE), UNUSED, KEPT)
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = Secure_LED_Off_callback &rArr; __acle_se_Secure_LED_Off_callback
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__acle_se_Secure_LED_Off_callback
+</UL>
+
+<P><STRONG><a name="[6d]"></a>Secure_LED_On</STRONG> (Thumb, 8 bytes, Stack size unknown bytes, anon$$obj.o(Veneer$$CMSE), UNUSED, KEPT)
+<BR><BR>[Stack]<UL><LI>Max Depth = 40 + Unknown Stack Size
+<LI>Call Chain = Secure_LED_On &rArr; __acle_se_Secure_LED_On &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__acle_se_Secure_LED_On
+</UL>
+
+<P><STRONG><a name="[6e]"></a>Secure_LED_On_callback</STRONG> (Thumb, 8 bytes, Stack size unknown bytes, anon$$obj.o(Veneer$$CMSE), UNUSED, KEPT)
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = Secure_LED_On_callback &rArr; __acle_se_Secure_LED_On_callback
+</UL>
+<BR>[Calls]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__acle_se_Secure_LED_On_callback
+</UL>
+
+<P><STRONG><a name="[6f]"></a>Secure_func</STRONG> (Thumb, 8 bytes, Stack size unknown bytes, anon$$obj.o(Veneer$$CMSE), UNUSED, KEPT)
+<BR><BR>[Stack]<UL><LI>Max Depth = 40 + Unknown Stack Size
+<LI>Call Chain = Secure_func &rArr; __acle_se_Secure_func &rArr; printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__acle_se_Secure_func
+</UL>
+
+<P><STRONG><a name="[70]"></a>CLK_GetCPUFreq</STRONG> (Thumb, 8 bytes, Stack size unknown bytes, anon$$obj.o(Veneer$$CMSE))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88 + Unknown Stack Size
+<LI>Call Chain = CLK_GetCPUFreq &rArr; __acle_se_CLK_GetCPUFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__acle_se_CLK_GetCPUFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemCoreClockUpdate
+</UL>
+
+<P><STRONG><a name="[71]"></a>CLK_GetHCLKFreq</STRONG> (Thumb, 8 bytes, Stack size unknown bytes, anon$$obj.o(Veneer$$CMSE), UNUSED, KEPT)
+<BR><BR>[Stack]<UL><LI>Max Depth = 104 + Unknown Stack Size
+<LI>Call Chain = CLK_GetHCLKFreq &rArr; __acle_se_CLK_GetHCLKFreq &rArr; SystemCoreClockUpdate &rArr; CLK_GetCPUFreq &rArr; __acle_se_CLK_GetCPUFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__acle_se_CLK_GetHCLKFreq
+</UL>
+
+<P><STRONG><a name="[72]"></a>CLK_GetHXTFreq</STRONG> (Thumb, 8 bytes, Stack size unknown bytes, anon$$obj.o(Veneer$$CMSE), UNUSED, KEPT)
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = CLK_GetHXTFreq &rArr; __acle_se_CLK_GetHXTFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__acle_se_CLK_GetHXTFreq
+</UL>
+
+<P><STRONG><a name="[73]"></a>CLK_GetLXTFreq</STRONG> (Thumb, 8 bytes, Stack size unknown bytes, anon$$obj.o(Veneer$$CMSE), UNUSED, KEPT)
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = CLK_GetLXTFreq &rArr; __acle_se_CLK_GetLXTFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__acle_se_CLK_GetLXTFreq
+</UL>
+
+<P><STRONG><a name="[74]"></a>CLK_GetModuleClockDivider</STRONG> (Thumb, 8 bytes, Stack size unknown bytes, anon$$obj.o(Veneer$$CMSE), UNUSED, KEPT)
+<BR><BR>[Stack]<UL><LI>Max Depth = 28 + Unknown Stack Size
+<LI>Call Chain = CLK_GetModuleClockDivider &rArr; __acle_se_CLK_GetModuleClockDivider
+</UL>
+<BR>[Calls]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__acle_se_CLK_GetModuleClockDivider
+</UL>
+
+<P><STRONG><a name="[75]"></a>CLK_GetModuleClockSource</STRONG> (Thumb, 8 bytes, Stack size unknown bytes, anon$$obj.o(Veneer$$CMSE), UNUSED, KEPT)
+<BR><BR>[Stack]<UL><LI>Max Depth = 28 + Unknown Stack Size
+<LI>Call Chain = CLK_GetModuleClockSource &rArr; __acle_se_CLK_GetModuleClockSource
+</UL>
+<BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__acle_se_CLK_GetModuleClockSource
+</UL>
+
+<P><STRONG><a name="[76]"></a>CLK_GetPCLK0Freq</STRONG> (Thumb, 8 bytes, Stack size unknown bytes, anon$$obj.o(Veneer$$CMSE), UNUSED, KEPT)
+<BR><BR>[Stack]<UL><LI>Max Depth = 104 + Unknown Stack Size
+<LI>Call Chain = CLK_GetPCLK0Freq &rArr; __acle_se_CLK_GetPCLK0Freq &rArr; SystemCoreClockUpdate &rArr; CLK_GetCPUFreq &rArr; __acle_se_CLK_GetCPUFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__acle_se_CLK_GetPCLK0Freq
+</UL>
+
+<P><STRONG><a name="[77]"></a>CLK_GetPCLK1Freq</STRONG> (Thumb, 8 bytes, Stack size unknown bytes, anon$$obj.o(Veneer$$CMSE), UNUSED, KEPT)
+<BR><BR>[Stack]<UL><LI>Max Depth = 104 + Unknown Stack Size
+<LI>Call Chain = CLK_GetPCLK1Freq &rArr; __acle_se_CLK_GetPCLK1Freq &rArr; SystemCoreClockUpdate &rArr; CLK_GetCPUFreq &rArr; __acle_se_CLK_GetCPUFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__acle_se_CLK_GetPCLK1Freq
+</UL>
+
+<P><STRONG><a name="[78]"></a>CLK_GetPLLClockFreq</STRONG> (Thumb, 8 bytes, Stack size unknown bytes, anon$$obj.o(Veneer$$CMSE))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28 + Unknown Stack Size
+<LI>Call Chain = CLK_GetPLLClockFreq &rArr; __acle_se_CLK_GetPLLClockFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__acle_se_CLK_GetPLLClockFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemCoreClockUpdate
+</UL>
+
+<P><STRONG><a name="[a3]"></a>XOM0_Func</STRONG> (Thumb, 12 bytes, Stack size 4 bytes, xom0_func.o(.text.XOM0_Func))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = XOM0_Func
+</UL>
+<BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[a2]"></a>XOM1_Func</STRONG> (Thumb, 12 bytes, Stack size 4 bytes, xom1_func.o(.text.XOM1_Func))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = XOM1_Func
+</UL>
+<BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[90]"></a>SYS_UnlockReg</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, system_m2351.o(.text.SYS_UnlockReg))
+<BR><BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FMC_NSBA_Setup
+</UL>
+
+<P><STRONG><a name="[97]"></a>__NVIC_EnableIRQ</STRONG> (Thumb, 44 bytes, Stack size 4 bytes, system_m2351.o(.text.__NVIC_EnableIRQ))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = __NVIC_EnableIRQ
+</UL>
+<BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCU_Setup
+</UL>
+
+<P><STRONG><a name="[9f]"></a>SYS_UnlockReg</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, main.o(.text.SYS_UnlockReg))
+<BR><BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[9b]"></a>SysTick_Config</STRONG> (Thumb, 84 bytes, Stack size 24 bytes, main.o(.text.SysTick_Config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = SysTick_Config &rArr; __NVIC_SetPriority
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_SetPriority
+</UL>
+<BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[9c]"></a>__NVIC_SetPriority</STRONG> (Thumb, 120 bytes, Stack size 24 bytes, main.o(.text.__NVIC_SetPriority))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __NVIC_SetPriority
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Config
+</UL>
+
+<P><STRONG><a name="[a6]"></a>_fp_digits</STRONG> (Thumb, 344 bytes, Stack size 64 bytes, printfa.o(i._fp_digits), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdrcmple
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[a5]"></a>_printf_core</STRONG> (Thumb, 1754 bytes, Stack size 128 bytes, printfa.o(i._printf_core), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_post_padding
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0printf
+</UL>
+
+<P><STRONG><a name="[a9]"></a>_printf_post_padding</STRONG> (Thumb, 32 bytes, Stack size 24 bytes, printfa.o(i._printf_post_padding), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[a8]"></a>_printf_pre_padding</STRONG> (Thumb, 44 bytes, Stack size 40 bytes, printfa.o(i._printf_pre_padding), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+<P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>

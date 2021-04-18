@@ -2,7 +2,7 @@
 Improve security of PX4 Autopilot using ARM TrustZone 🚁🔐
 
 ## Architecture
-<img title="Architecture" alt="PX4-TrustZone" src="https://github.com/korkeep/PX4-TrustZone/raw/main/Architecture/PX4-TrustZone.png" width="800"/>
+<img title="Architecture" alt="PX4-TrustZone" src="https://github.com/korkeep/PX4-TrustZone/raw/main/Architecture/PX4-TrustZone.PNG" width="800"/>
 
 ## References
 - [TrustZone Technology](https://www.arm.com/why-arm/technologies/trustzone-for-cortex-m)

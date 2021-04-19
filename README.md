@@ -25,13 +25,13 @@ Secure State is a TEE that can protect from unauthorized external access by usin
 Non-Secure State is a REE(Rich Execution Environment) in which drone applications, middleware, operating systems, and drivers operate. Components of Non-Secure State include NS-Driver, RTOS, Middleware, and Flight Control.  
 
 ### High-Entropy RNG
-High-Entropy RNG (Random Number Generator) generates random numbers with high entropy as hardware. Random numbers are used in the encryption process and have higher reliability than PRNG(Pseudo RNG).  
+High-Entropy RNG(Random Number Generator) generates random numbers with high entropy as hardware. Random numbers are used in the encryption process and have higher reliability than PRNG(Pseudo RNG).  
 
 ### Crypto Accelerator
 Crypto Accelerator is hardware that performs key generation, encryption, and decryption, and supports various encryption algorithms such as AES, ECDSA, RSA, and SHA. Crypto Accelerator can encrypt and store data in Secure Flash for data confidentiality.  
 
 ### OTP Memory
-One Time Programmable (OTP) memory is non-volatile and cannot be rewritten. Provisioned Data was provided when manufacturing SoC devices, Device Unique Key is used in the encryption process.  
+OTP(One Time Programmable) memory is non-volatile and cannot be rewritten. Provisioned Data was provided when manufacturing SoC devices, Device Unique Key is used in the encryption process.  
 
 ## References
 - [NuttX Github](https://github.com/PX4/NuttX)

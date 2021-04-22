@@ -16,7 +16,7 @@ The **PX4-TrustZone** project proposes an architecture that can protect core-ass
 - [ARMv8-M FreeRTOS Demo](https://www.freertos.org/RTOS-Cortex-M23-NuMaker-PFM-M2351-Keil.html#SourceCodeOrg)
 
 ## Architecture
-<img title="Architecture" alt="PX4-TrustZone" src="https://github.com/korkeep/PX4-TrustZone/raw/main/Architecture/PX4-TrustZone.PNG" width="800"/>
+<img title="Architecture" alt="PX4-TrustZone" src="https://github.com/korkeep/PX4-TrustZone/raw/main/Architecture/PX4-TrustZone.png" width="800"/>
 
 ### Secure State
 **Secure State** is a TEE that can protect from unauthorized external access by using the ARM TrustZone technique. Components of **Secure State** include Trusted Firmware, S-Driver, Flight Control IDS, PSA Services, and PSA Development API.

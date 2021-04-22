@@ -19,8 +19,8 @@ The **PX4-TrustZone** project proposes an architecture that can protect core-ass
 <img title="Architecture" alt="PX4-TrustZone" src="https://github.com/korkeep/PX4-TrustZone/raw/main/Architecture/PX4-TrustZone.PNG" width="800"/>
 
 ### Secure State
-**Secure State** is a TEE that can protect from unauthorized external access by using the ARM TrustZone technique. Components of **Secure State** include TF-M Core, S-Driver, Flight Control IDS, PSA Services, and PSA Development API.
-- **TF-M Core**: TF-M provides a software package to build a TEE. TF-M is the basis for utilizing the ARM TrustZone function.
+**Secure State** is a TEE that can protect from unauthorized external access by using the ARM TrustZone technique. Components of **Secure State** include Trusted Firmware, S-Driver, Flight Control IDS, PSA Services, and PSA Development API.
+- **Trusted Firmware**: Trusted Firmware provides a software package to build a TEE. Trusted Firmware is the basis for utilizing the ARM TrustZone function.
 - **S-Drivers**: S-Drivers conducts a main role in the drone system. S-Drivers operate in a TEE.
 - **PSA Services**: PSA Services are security function that can be applied to the drone system. Functions provided by PSA Services include Key Management, Cryptography, Secure Boot, Secure Storage, Secure Firmware Update, and Attestation.
 - **Flight Control IDS**: Logs are monitored to detect intrusions. It notifies the user when the log is different from the normal case.

@@ -33,14 +33,12 @@ The **PX4-TrustZone** project proposes an architecture that can protect core-ass
 - **Middleware**: Software that acts as a request broker between RTOS and Flight Control. uORB does this role in PX4.
 - **Flight Control**: It shows the main modules that control drone flight and the flow of data processed by the drone system. First, a command from the user is received from the Commander, and data is transferred in the order of Estimator, Navigator, and Controller.
 
-### High-Entropy RNG
-High-Entropy RNG(Random Number Generator) generates random numbers with high entropy as hardware. Random numbers are used in the encryption process and have higher reliability than PRNG(Pseudo RNG).  
+### Trusted Hardware
+**Trusted Hardware** is a hardware module necessary to utilize the security functions provided by Secure State. Components of **Trusted Hardware** include High-Entropy RNG, Crypto Accelerator, and OTP Memory.
+- **High-Entropy RNG**: High-Entropy RNG(Random Number Generator) generates random numbers with high entropy as hardware. Random numbers are used in the encryption process and have higher reliability than PRNG(Pseudo RNG).
+- **Crypto Accelerator**: Crypto Accelerator is hardware that performs key generation, encryption, and decryption, and supports various encryption algorithms such as AES, ECDSA, RSA, and SHA. Crypto Accelerator can encrypt and store data in Secure Flash for data confidentiality.
+- **OTP Memory**: OTP(One Time Programmable) memory is non-volatile and cannot be rewritten. Provisioned Data was provided when manufacturing SoC devices, Device Unique Key is used in the encryption process.
 
-### Crypto Accelerator
-Crypto Accelerator is hardware that performs key generation, encryption, and decryption, and supports various encryption algorithms such as AES, ECDSA, RSA, and SHA. Crypto Accelerator can encrypt and store data in Secure Flash for data confidentiality.  
-
-### OTP Memory
-OTP(One Time Programmable) memory is non-volatile and cannot be rewritten. Provisioned Data was provided when manufacturing SoC devices, Device Unique Key is used in the encryption process.  
 
 ## References
 - [NuttX Github](https://github.com/PX4/NuttX)

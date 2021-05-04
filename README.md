@@ -43,8 +43,10 @@ The **PX4-TrustZone** project proposes an architecture that can protect core-ass
 ## References
 - [PX4 NuttX Github](https://github.com/PX4/NuttX)
 - [PX4 Bootloader Github](https://github.com/PX4/PX4-Bootloader)
+- [libopencm3 Github](https://github.com/libopencm3/libopencm3)
 - [NuttX Porting Guide](https://cwiki.apache.org/confluence/display/NUTTX/Porting+Guide)
 - [Bootloader Porting Guide](https://docs.px4.io/master/en/software_update/stm32_bootloader.html)
+- [Flight Controller Porting Guide](https://hamishwillee.gitbooks.io/havdevguide/content/en/hardware/porting_guide_nuttx.html)
 - [STM32-Trust](https://www.st.com/content/st_com/en/ecosystems/stm32trust.html)
 - [STM32CubeL5 Examples](https://github.com/STMicroelectronics/STM32CubeL5)
 - [M2351BSP Examples](https://github.com/OpenNuvoton/M2351BSP)

@@ -1,0 +1,115 @@
+/**
+  @page Step2-ST_Customer_level_n+1  Usage of Proprietary Code Read Out Protection for STM32L4 Readme file
+  
+  @verbatim
+  ******************** (C) COPYRIGHT 2015 STMicroelectronics *******************
+  * @file    Step2-ST_Customer_level_n+1/readme.txt 
+  * @author  MCD Application Team
+  * @version V1.1.0
+  * @date    30-November-2020
+  * @brief   Description of the PCROP example STEP2.
+  ******************************************************************************
+  *
+  * Redistribution and use in source and binary forms, with or without modification,
+  * are permitted provided that the following conditions are met:
+  *   1. Redistributions of source code must retain the above copyright notice,
+  *      this list of conditions and the following disclaimer.
+  *   2. Redistributions in binary form must reproduce the above copyright notice,
+  *      this list of conditions and the following disclaimer in the documentation
+  *      and/or other materials provided with the distribution.
+  *   3. Neither the name of STMicroelectronics nor the names of its contributors
+  *      may be used to endorse or promote products derived from this software
+  *      without specific prior written permission.
+  *
+  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+  * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+  * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+  * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+  * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+  * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+  * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  *
+  ******************************************************************************
+  @endverbatim
+
+@par Example Description
+
+   In this Step2 project the MCU is already preloaded with FIR-Filter PRCOP-ed IP-Code (done in Step1-ST_Customer_level_n project).
+   To call the IP-Code FIR_lowpass_filter() function:
+   - The fir_filter.h header file is included in main.c file
+   - Symbol definition file (filtre.txt for MDK-ARM™ and fir_filter.o for EWARM and STM32CubeIDE) containing PCROP-ed functions' symbols 
+     and addresses is included in this project. Noting that symbol definition file have to be generated in Step1-ST_Customer_level_n 
+	 in order to replace the existing one in this project.
+	  
+  
+
+@note Care must be taken when using HAL_Delay(), this function provides accurate delay (in milliseconds)
+      based on variable incremented in SysTick ISR. This implies that if HAL_Delay() is called from
+      a peripheral ISR process, then the SysTick interrupt must have higher priority (numerically lower)
+      than the peripheral interrupt. Otherwise the caller ISR process will be blocked.
+      To change the SysTick interrupt priority you have to use HAL_NVIC_SetPriority() function.
+      
+@note The application needs to ensure that the SysTick time base is always set to 1 millisecond
+      to have correct HAL operation.
+
+
+@par Directory contents 
+
+  - Step2-ST_Customer_level_n+1/Src/main.c                      Main program
+  - Step2-ST_Customer_level_n+1/Src/system_stm32l4xx.c          STM32L4xx system clock configuration file
+  - Step2-ST_Customer_level_n/+1Src/stm32l4xx_it.c              Interrupt handlers 
+  - Step2-ST_Customer_level_n+1/Src/math_helper.c               Calculation of SNR 
+  - Step2-ST_Customer_level_n+1/Src/arm_fir_data.c              Contains FIR_Filter's Input signal and Reference output signal computed with MATLAB
+  - Step2-ST_Customer_level_n+1/Inc/main.h                      Main program header file  
+  - Step2-ST_Customer_level_n+1/Inc/stm32l4xx_hal_conf.h        HAL Configuration file
+  - Step2-ST_Customer_level_n+1/Inc/stm32l4xx_it.h              Interrupt handlers header file
+  - Step2-ST_Customer_level_n+1/Inc/math_helper.h               math_helper header file
+  
+  Related IP-Code files provided from ST Customer level n :
+  - Step2-ST_Customer_level_n+1/MDK-ARM/fir_filter.txt          Symbol definition file for MDK-ARM™ project containing PCROP-ed functions' symbols and addresses
+  - Step2-ST_Customer_level_n+1/EWARM/fir_filter.o              Symbol definition file for EWARM project containing PCROP-ed functions' symbols and addresses
+  - Step1-ST_Customer_level_n+1/Inc/fir_filter.h                FIR-Filter PCROP-ed IP-Code header file	
+  
+  
+@par Hardware and Software environment  
+
+  - This example runs on STM32L4xx devices.
+  - This example has been tested with STMicroelectronics STM32L476G-Discovery RevB
+    boards and can be easily tailored to any other supported device and development board.
+  - This example has been tested with the following toolchains :
+      - RealView Microcontroller Development Kit (MDK-ARM™) toolchain V5.29 
+      - IAR Embedded Workbench for ARM (EWARM) toolchain V8.50.6
+      - STM32CubeIDE toolchain v1.5.0
+
+ 
+
+
+@par How to use it ? 
+
+Before running this project the following conditions must be met:
+- The same toolchain and compiler version must be used for both projects in STEP1 and STEP2: if EWARM was used in Step1-ST_Customer_level_n project 
+  then it must be used for Step2-ST_Customer_level_n+1 too. 
+- The Step1-ST_Customer_level_n project have to be run in order to have FIR-Filter IP-Code programmed and PCROP-ed in this project. 
+  Once done, PCROP-ed IP-Code functions defined in fir_filter.h can be called in this project.
+- The provided symbol definition file must be replaced by the newly generated in STEP1 as indicated below:
+  For MDK-ARM™ toolchain: replace filtre.txt in Step2-ST_Customer_level_n+1\Src by the file generated in Step1-ST_Customer_level_n\MDK-ARM\PCROP-IP-Code-XO
+  For EWARM toolchain: replace fir_filter.o in Step2-ST_Customer_level_n+1\EWARM by the file generated in Step1-ST_Customer_level_n\EWARM
+  For CubeIDE toolchain: Please replace fir_filter.o in Step2-ST_Customer_level_n+1\STM32CubeIDE by the file generated in Step1-ST_Customer_level_n\STM32CubeIDE\PCROP-IP-CODE-XO	
+
+In order to make the program work, you must do the following :
+
+The FIR-Filter IP-Code must be already programmed and PCROP-ed before running this example.
+	1. Open project located in Step2-ST_Customer_level_n+1 directory and choose the same toolchain used in STEP1.
+	2. Rebuild all files.
+	3. Run the example following the sequence below
+		a) Power on the board and load the code (here only user code is loaded)
+		b) Press reset button
+			o A welcome message is displayed “WELCOME PCROP STEP 2”
+			o A pplication test is running and result is checked. If test is passed, the green light toggles infinitely
+
+
+ * <h3><center>&copy; COPYRIGHT STMicroelectronics</center></h3>
+ */

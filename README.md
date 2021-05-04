@@ -41,9 +41,10 @@ The **PX4-TrustZone** project proposes an architecture that can protect core-ass
 
 
 ## References
-- [NuttX Github](https://github.com/PX4/NuttX)
+- [PX4 NuttX Github](https://github.com/PX4/NuttX)
+- [PX4 Bootloader Github](https://github.com/PX4/PX4-Bootloader)
 - [NuttX Porting Guide](https://cwiki.apache.org/confluence/display/NUTTX/Porting+Guide)
-- [M2351BSP Examples](https://github.com/OpenNuvoton/M2351BSP)
-- [STM32 Bootloader](https://docs.px4.io/master/en/software_update/stm32_bootloader.html)
-- [STM32Trust](https://www.st.com/content/st_com/en/ecosystems/stm32trust.html)
+- [Bootloader Porting Guide](https://docs.px4.io/master/en/software_update/stm32_bootloader.html)
+- [STM32-Trust](https://www.st.com/content/st_com/en/ecosystems/stm32trust.html)
 - [STM32CubeL5 Examples](https://github.com/STMicroelectronics/STM32CubeL5)
+- [M2351BSP Examples](https://github.com/OpenNuvoton/M2351BSP)

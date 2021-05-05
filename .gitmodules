@@ -1,0 +1,3 @@
+[submodule "PX4-FMUv5"]
+	path = PX4-FMUv5
+	url = https://github.com/korkeep/PX4-FMUv5

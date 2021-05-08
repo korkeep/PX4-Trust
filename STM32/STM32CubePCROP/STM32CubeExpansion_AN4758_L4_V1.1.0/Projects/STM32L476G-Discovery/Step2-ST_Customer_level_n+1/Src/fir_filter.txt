@@ -1,4 +1,0 @@
-#<SYMDEFS># ARM Linker, 5050106: Last Updated: Mon Aug 24 13:10:15 2015
-0x08008001 T FIR_lowpass_filter
-0x08008051 T arm_fir_f32
-0x0800871b T arm_fir_init_f32

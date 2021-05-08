@@ -1,9 +1,9 @@
 [submodule "PX4-FMUv5"]
 	path = PX4-FMUv5
 	url = https://github.com/korkeep/PX4-FMUv5
-[submodule "STM32/STM32CubeL5"]
-	path = STM32/STM32CubeL5
-	url = https://github.com/STMicroelectronics/STM32CubeL5.git
 [submodule "M2351BSP"]
 	path = M2351BSP
 	url = https://github.com/OpenNuvoton/M2351BSP.git
+[submodule "STM32CubeL5"]
+	path = STM32CubeL5
+	url = https://github.com/STMicroelectronics/STM32CubeL5.git

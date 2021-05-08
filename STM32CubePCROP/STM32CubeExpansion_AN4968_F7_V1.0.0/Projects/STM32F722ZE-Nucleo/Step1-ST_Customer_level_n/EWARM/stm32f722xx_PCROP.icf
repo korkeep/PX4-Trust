@@ -1,0 +1,57 @@
+/*###ICF### Section handled by ICF editor, don't touch! ****/
+/*-Editor annotation file-*/
+/* IcfEditorFile="$TOOLKIT_DIR$\config\ide\IcfEditor\cortex_v1_0.xml" */
+
+/*-Specials-*/
+define symbol __ICFEDIT_intvec_start__ = 0x08000000;
+
+/*-Memory Regions-*/
+define symbol __ICFEDIT_region_ROM_start__     = 0x08000000;
+define symbol __ICFEDIT_region_ROM_end__       = 0x08003FFF;
+define symbol __ICFEDIT_region_RAM_start__     = 0x20000100;
+define symbol __ICFEDIT_region_RAM_end__       = 0x2003FEFF;
+/*-Sizes-*/
+define symbol __ICFEDIT_size_cstack__ = 0x400;
+define symbol __ICFEDIT_size_heap__   = 0x200;
+/**** End of ICF editor section. ###ICF###*/
+
+define memory mem with size = 4G;
+define region ROM_region      = mem:[from __ICFEDIT_region_ROM_start__   to __ICFEDIT_region_ROM_end__];
+define region RAM_region      = mem:[from __ICFEDIT_region_RAM_start__   to __ICFEDIT_region_RAM_end__];
+
+/* define PCROP area start and end address */
+define symbol __ICFEDIT_region_PCROP_start__    = 0x08008000;
+define symbol __ICFEDIT_region_PCROP_end__      = 0x0800BFFF;
+define region PCROP_region    = mem:[from __ICFEDIT_region_PCROP_start__  to __ICFEDIT_region_PCROP_end__];
+
+/* define 16KB page of constant data for fir coefficients */
+define symbol __ICFEDIT_region_CONST_start__    = 0x0800C000;
+define symbol __ICFEDIT_region_CONST_end__      = 0x0800FFFF;
+define region FIR_COEF_region    = mem:[from __ICFEDIT_region_CONST_start__   to __ICFEDIT_region_CONST_end__];
+
+define symbol __ICFEDIT_region_FirBSSRAM_region_start__ = 0x20000000;
+define symbol __ICFEDIT_region_FirBSSRAM_region_end__   = 0x200000FF;
+define region FirBSSRAM_region  = mem:[from __ICFEDIT_region_FirBSSRAM_region_start__ to __ICFEDIT_region_FirBSSRAM_region_end__];
+
+define block CSTACK    with alignment = 8, size = __ICFEDIT_size_cstack__   { };
+define block HEAP      with alignment = 8, size = __ICFEDIT_size_heap__     { };
+
+initialize by copy { readwrite };
+do not initialize  { section .noinit };
+
+place at address mem:__ICFEDIT_intvec_start__ { readonly section .intvec };
+
+place in ROM_region   { readonly };
+
+/* Place IP Code in sector 2 which will be PCROP-ed */
+place in PCROP_region   { ro object arm_fir_f32.o,
+                          ro object arm_fir_init_f32.o,
+                          ro object fir_filter.o}; 
+                          
+place in FirBSSRAM_region   { zi object fir_filter.o,
+                              rw object fir_filter.o};
+                                
+place in RAM_region   { readwrite,
+                        block CSTACK, block HEAP };
+                       
+place in FIR_COEF_region { ro data section fir_coef_section object fir_filter.o };	

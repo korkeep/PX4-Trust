@@ -1,8 +1,8 @@
-# PX4-TrustZone
-The **PX4-TrustZone** project proposes an architecture that can protect core-assets of the drone system, such as private key, user data, and security functions, by utilizing the ARM TrustZone function. 🚁🔐  
+# PX4-Trust
+The **PX4-Trust** project proposes an architecture that can protect core-assets of the drone system, such as private key, user data, and security functions, by utilizing the ARM Trusted Firmware-M function. 🚁🔐  
 
 ## PX4
-<img title="Architecture" alt="PX4" src="https://github.com/korkeep/PX4-TrustZone/raw/main/Architecture/PX4.png" width="500"/>  
+<img title="Architecture" alt="PX4" src="https://github.com/korkeep/PX4-Trust/raw/main/Architecture/PX4.png" width="500"/>  
 
 **PX4 Autopilot** is an open-source autopilot system for Unmanned Aerial Vehicle. **PX4 Autopilot** guarantees scalability so that the PX4 ecosystem can be maintained by providing a standard for drone hardware and software.  
 - [PX4 Github](https://github.com/PX4/PX4-Autopilot)
@@ -10,17 +10,17 @@ The **PX4-TrustZone** project proposes an architecture that can protect core-ass
 - [QGroundControl](http://qgroundcontrol.com/)
 - [MAVLink Protocol](https://mavlink.io/en/)
 
-## ARM TrustZone
-**ARM TrustZone** was introduced to protect key assets of the system such as private keys, user data, and security functions from unauthorized external access. **ARM TrustZone** is a mechanism that guarantees the separation of the execution environment by dividing memory, peripheral devices, and functions into secure and non-secure areas. ARMv8-M is a processor model that can utilize **ARM TrustZone** function based on ARM Cortex-M series(M23, M33, M35P, M55). ARMv8-M provides secure functions such as TEE(Trusted Execution Environment), Secure Key Storage, Secure Firmware Update, and Crypto Accelerator.
-- [TrustZone Technology](https://www.arm.com/why-arm/technologies/trustzone-for-cortex-m)
+## ARM PSA(Platform Security Architecture)
+**ARM PSA** was introduced to protect key assets of the system such as private keys, user data, and security functions from unauthorized external access. **ARM PSA** is a mechanism that guarantees the separation of the execution environment by dividing memory, peripheral devices, and functions into secure and non-secure areas. ARMv8-M is a processor model that can utilize **ARM PSA** function based on ARM Cortex-M series(M23, M33, M35P, M55). ARMv8-M provides secure functions such as TEE(Trusted Execution Environment), Secure Key Storage, Secure Firmware Update, and Crypto Accelerator.
+- [PSA Technology](https://www.arm.com/why-arm/technologies/trustzone-for-cortex-m)
 - [ARMv8-M FreeRTOS Demo](https://www.freertos.org/RTOS-Cortex-M23-NuMaker-PFM-M2351-Keil.html#SourceCodeOrg)
 
 ## Architecture
-<img title="Architecture" alt="PX4-TrustZone" src="https://github.com/korkeep/PX4-TrustZone/raw/main/Architecture/PX4-TrustZone.png" width="800"/>
+<img title="Architecture" alt="PX4-Trust" src="https://github.com/korkeep/PX4-Trust/raw/main/Architecture/PX4-Trust.png" width="800"/>
 
 ### Secure State
-**Secure State** is a TEE that can protect from unauthorized external access by using the ARM TrustZone technique. Components of **Secure State** include Trusted Firmware, S-Driver, Flight Control IDS, PSA Services, and PSA Development API.
-- **Trusted Firmware**: Trusted Firmware provides a software package to build a TEE. Trusted Firmware is the basis for utilizing the ARM TrustZone function.
+**Secure State** is a TEE that can protect from unauthorized external access by using the ARM PSA technique. Components of **Secure State** include Trusted Firmware, S-Driver, Flight Control IDS, PSA Services, and PSA Development API.
+- **Trusted Firmware**: Trusted Firmware provides a software package to build a TEE. Trusted Firmware is the basis for utilizing the ARM PSA function.
 - **S-Drivers**: S-Drivers conducts a main role in the drone system. S-Drivers operate in a TEE.
 - **PSA Services**: PSA Services are security function that can be applied to the drone system. Functions provided by PSA Services include Key Management, Cryptography, Secure Boot, Secure Storage, Secure Firmware Update, and Attestation.
 - **Flight Control IDS**: Logs are monitored to detect intrusions. It notifies the user when the log is different from the normal case.

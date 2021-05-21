@@ -28,7 +28,7 @@ The **PX4-Trust** project proposes an architecture that can protect core-assets 
 
 ### Non-Secure State
 **Non-Secure State** is a REE(Rich Execution Environment) in which drone applications, middleware, operating systems, and drivers operate. Components of **Non-Secure State** include NS-Driver, RTOS, Middleware, and Flight Control.  
-- **NS-Drivers**: NS-Drivers conducts a auxiliary role in the drone system. NS-Drivers operate in a REE.
+- **Drivers**: A driver provides software interface to hardware devices. There are IMU, RC, GPS, Telemetry Radio, Distance and Barometer drivers representatively.
 - **RTOS**: An operating system focused on real-time application management. NuttX does this role in PX4.
 - **Middleware**: Software that acts as a request broker between RTOS and Flight Control. uORB does this role in PX4.
 - **Flight Control**: It shows the main modules that control drone flight and the flow of data processed by the drone system. First, a command from the user is received from the Commander, and data is transferred in the order of Estimator, Navigator, and Controller.

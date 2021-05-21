@@ -16,7 +16,7 @@ The **PX4-Trust** project proposes an architecture that can protect core-assets 
 - [ARMv8-M FreeRTOS Demo](https://www.freertos.org/RTOS-Cortex-M23-NuMaker-PFM-M2351-Keil.html#SourceCodeOrg)
 
 ## Architecture
-<img title="Architecture" alt="PX4-Trust" src="https://github.com/korkeep/PX4-Trust/raw/main/Architecture/PX4-Trust.png" width="800"/>
+<img title="Architecture" alt="PX4-Trust" src="https://github.com/korkeep/PX4-Trust/blob/main/Architecture/PX4-Trust.png" width="1000"/>
 
 ### Secure State
 **Secure State** is a TEE that can protect from unauthorized external access by using the ARM PSA technique. Components of **Secure State** include Trusted Firmware, S-Driver, Flight Control IDS, PSA Services, and PSA Development API.

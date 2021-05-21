@@ -19,14 +19,14 @@ The **PX4-Trust** project proposes an architecture that can protect core-assets 
 <img title="Architecture" alt="PX4-Trust" src="https://github.com/korkeep/PX4-Trust/blob/main/Architecture/PX4-Trust.png" width="1000"/>
 
 ### Secure State
-**Secure State** is a TEE that can protect from unauthorized external access by using the ARM PSA technique. Components of **Secure State** include Trusted Firmware, S-Driver, Flight Control IDS, PSA Services, and PSA Development API.
+**Secure State** is a TEE that can protect from unauthorized external access by using the ARM PSA technique. Components of **Secure State** include Trusted Firmware, Input Validation System, PSA Services, and PSA Development API.
 - **Trusted Firmware**: Trusted Firmware provides a software package to build a TEE. Trusted Firmware is the basis for utilizing the ARM PSA function.
 - **PSA Services**: PSA Services are security function that can be applied to the drone system. Functions provided by PSA Services include Key Management, Cryptography, Secure Boot, Secure Storage, Secure Firmware Update, and Attestation.
-- **Flight Control IDS**: Logs are monitored to detect intrusions. It notifies the user when the log is different from the normal case.
+- **Input Validation System**: Logs are monitored to validate inputs. It notifies the user when the log is different from the normal case.
 - **PSA Development API**: PSA Development API allows applications in the Non-Secure State to access assets in the Secure State.
 
 ### Non-Secure State
-**Non-Secure State** is a REE(Rich Execution Environment) in which drone applications, middleware, operating systems, and drivers operate. Components of **Non-Secure State** include NS-Driver, RTOS, Middleware, and Flight Control.  
+**Non-Secure State** is a REE(Rich Execution Environment) in which drone applications, middleware, operating systems, and drivers operate. Components of **Non-Secure State** include Drivers, RTOS, Middleware, and Flight Control.  
 - **Drivers**: A driver provides software interface to hardware devices. There are IMU, RC, GPS, Telemetry Radio, Distance and Barometer drivers representatively.
 - **RTOS**: An operating system focused on real-time application management. NuttX does this role in PX4.
 - **Middleware**: Software that acts as a request broker between RTOS and Flight Control. uORB does this role in PX4.

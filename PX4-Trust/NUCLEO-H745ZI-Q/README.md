@@ -2,7 +2,7 @@
 <img title="NUCLEO-H745ZI-Q" alt="" src="https://user-images.githubusercontent.com/20378368/119439137-b5d1d280-bd5c-11eb-9bfb-c7afef5a0ccc.png" width="500"/>  
 
 ### Pin Configureation
-> <img title="pinmap" alt="" src="https://user-images.githubusercontent.com/20378368/119438106-6d191a00-bd5a-11eb-9560-6fc8365af1db.png" width="800"/>  
+> <img title="pinmap" alt="" src="https://user-images.githubusercontent.com/20378368/119439753-faaa3900-bd5d-11eb-92be-e22db1f70294.png" width="800"/>  
 - On-board ST-LINK/V2-1
 - Mbed-enabled
 - 3 user LEDs

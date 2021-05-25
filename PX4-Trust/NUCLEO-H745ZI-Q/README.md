@@ -32,11 +32,15 @@
 
 - **Step 3**: Then `nuttx`, `nuttx.bin`, `nuttx.hex`, `nuttx.manifest`, `System.map` files will be generated  
 
-  > <img title="result" alt="" src="https://user-images.githubusercontent.com/20378368/119437274-be280e80-bd58-11eb-83ee-a4e94c531831.png" width="500"/>  
+  > <img title="RTOS-build" alt="" src="https://user-images.githubusercontent.com/20378368/119437274-be280e80-bd58-11eb-83ee-a4e94c531831.png" width="500"/>  
 
 - **Step 4**: Upload `nuttx.bin`, `System.map` files to **NUCLEO-H745ZI-Q** via [ST-Link v2](https://www.st.com/en/development-tools/st-link-v2.html)  
 
-  > <img title="upload" alt="" src="https://user-images.githubusercontent.com/20378368/119437566-5aeaac00-bd59-11eb-9d08-206af263871d.png" width="500"/>  
+  > <img title="RTOS-upload" alt="" src="https://user-images.githubusercontent.com/20378368/119437566-5aeaac00-bd59-11eb-9d08-206af263871d.png" width="500"/>  
+
+- **Step 5**: Upload result
+
+  > <img title="RTOS-result" alt="" src="https://user-images.githubusercontent.com/20378368/119440374-224dd100-bd5f-11eb-902a-8c00a328083f.png" width="250"/>  
 
 ### Bootloader porting
 [**PX4-Bootloader**](https://github.com/korkeep/PX4-Trust/tree/main/PX4-Trust/NUCLEO-H745ZI-Q/Bootloader) Configure Steps

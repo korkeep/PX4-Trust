@@ -1,8 +1,8 @@
 
 px4_add_board(
 	PLATFORM nuttx
-	VENDOR px4trust
-	MODEL nucleo
+	VENDOR px4
+	MODEL fmu-v6u
 	LABEL test
 	TOOLCHAIN arm-none-eabi
 	ARCHITECTURE cortex-m7

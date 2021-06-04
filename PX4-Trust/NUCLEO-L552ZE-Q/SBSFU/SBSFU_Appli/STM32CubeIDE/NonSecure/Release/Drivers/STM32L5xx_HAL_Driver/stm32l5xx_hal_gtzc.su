@@ -1,0 +1,3 @@
+stm32l5xx_hal_gtzc.c:216:19:HAL_GTZC_TZSC_ConfigPeriphAttributes	12	static
+stm32l5xx_hal_gtzc.c:318:19:HAL_GTZC_TZSC_GetConfigPeriphAttributes	20	static
+stm32l5xx_hal_gtzc.c:678:10:HAL_GTZC_TZSC_GetLock	0	static

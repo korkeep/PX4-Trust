@@ -1,0 +1,7 @@
+flash_map_extended.c:27:5:flash_device_base	8	static
+flash_map_extended.c:55:5:flash_area_id_from_multi_image_slot	0	static
+flash_map_extended.c:68:5:flash_area_id_from_image_slot	0	static
+flash_map_extended.c:73:5:flash_area_id_to_multi_image_slot	8	static
+flash_map_extended.c:87:5:flash_area_id_to_image_slot	8	static
+flash_map_extended.c:92:9:flash_area_erased_val	8	static
+flash_map_extended.c:99:5:flash_area_read_is_empty	24	static

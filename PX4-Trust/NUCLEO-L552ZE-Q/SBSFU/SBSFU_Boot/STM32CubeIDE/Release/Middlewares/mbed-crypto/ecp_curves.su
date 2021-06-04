@@ -1,0 +1,4 @@
+ecp_curves.c:974:20:add32	0	static
+ecp_curves.c:980:20:sub32	8	static
+ecp_curves.c:1076:12:ecp_mod_p256	72	static
+ecp_curves.c:754:5:mbedtls_ecp_group_load	16	static

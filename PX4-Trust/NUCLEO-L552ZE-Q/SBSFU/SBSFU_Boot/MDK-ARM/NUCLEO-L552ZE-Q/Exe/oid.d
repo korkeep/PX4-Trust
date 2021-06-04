@@ -1,0 +1,20 @@
+nucleo-l552ze-q/exe/oid.o: \
+  ..\..\..\..\..\..\Middlewares\Third_Party\mbed-crypto\library\oid.c \
+  ..\Inc\config-boot.h \
+  ..\..\..\..\..\..\Middlewares\Third_Party\mbed-crypto\include\mbedtls\check_config.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\limits.h \
+  ..\..\..\..\..\..\Middlewares\Third_Party\mbed-crypto\include\mbedtls\oid.h \
+  ..\..\..\..\..\..\Middlewares\Third_Party\mbed-crypto\include\mbedtls\asn1.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stddef.h \
+  ..\..\..\..\..\..\Middlewares\Third_Party\mbed-crypto\include\mbedtls\bignum.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
+  ..\..\..\..\..\..\Middlewares\Third_Party\mbed-crypto\include\mbedtls\pk.h \
+  ..\..\..\..\..\..\Middlewares\Third_Party\mbed-crypto\include\mbedtls\md.h \
+  ..\..\..\..\..\..\Middlewares\Third_Party\mbed-crypto\include\mbedtls\rsa.h \
+  ..\..\..\..\..\..\Middlewares\Third_Party\mbed-crypto\include\mbedtls\ecp.h \
+  ..\..\..\..\..\..\Middlewares\Third_Party\mbed-crypto\include\mbedtls\ecdsa.h \
+  ..\..\..\..\..\..\Middlewares\Third_Party\mbed-crypto\include\mbedtls\cipher.h \
+  ..\..\..\..\..\..\Middlewares\Third_Party\mbed-crypto\include\mbedtls\platform_util.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h \
+  ..\..\..\..\..\..\Middlewares\Third_Party\mbed-crypto\include\mbedtls\platform.h

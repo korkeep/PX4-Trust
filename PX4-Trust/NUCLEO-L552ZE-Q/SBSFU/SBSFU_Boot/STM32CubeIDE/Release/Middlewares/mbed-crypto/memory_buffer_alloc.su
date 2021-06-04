@@ -1,0 +1,8 @@
+memory_buffer_alloc.c:134:12:verify_header	0	static
+memory_buffer_alloc.c:179:12:verify_chain	16	static
+memory_buffer_alloc.c:230:14:buffer_alloc_calloc	32	static
+memory_buffer_alloc.c:381:13:buffer_alloc_free	24	static
+memory_buffer_alloc.c:498:6:mbedtls_memory_buffer_set_verify	0	static
+memory_buffer_alloc.c:503:5:mbedtls_memory_buffer_alloc_verify	0	static
+memory_buffer_alloc.c:573:6:mbedtls_memory_buffer_alloc_init	16	static
+memory_buffer_alloc.c:608:6:mbedtls_memory_buffer_alloc_free	0	static

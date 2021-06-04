@@ -1,0 +1,1 @@
+bootutil_misc.c:54:10:boot_secure_memequal	16	static

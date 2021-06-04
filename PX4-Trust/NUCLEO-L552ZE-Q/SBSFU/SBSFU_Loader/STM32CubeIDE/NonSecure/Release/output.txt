@@ -1,0 +1,2 @@
+loader with secure part (MCUBOOT_PRIMARY_ONLY defined)
+loader with secure part (MCUBOOT_PRIMARY_ONLY defined)

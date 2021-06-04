@@ -1,0 +1,2 @@
+tick.c:28:19:HAL_InitTick	0	static
+tick.c:45:10:HAL_GetTick	8	static

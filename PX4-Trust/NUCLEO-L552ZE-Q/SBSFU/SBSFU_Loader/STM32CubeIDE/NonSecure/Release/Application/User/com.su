@@ -1,0 +1,9 @@
+com.c:67:20:COM_Init	8	static
+com.c:100:20:COM_DeInit	0	static
+com.c:114:6:HAL_UART_MspInit	64	static
+com.c:152:6:HAL_UART_MspDeInit	16	static
+com.c:179:19:COM_Transmit	0	static
+com.c:190:19:COM_Receive	0	static
+com.c:200:19:COM_Flush	0	static
+com.c:228:26:Ymodem_HeaderPktRxCpltCallback	0	static
+com.c:243:26:Ymodem_DataPktRxCpltCallback	0	static

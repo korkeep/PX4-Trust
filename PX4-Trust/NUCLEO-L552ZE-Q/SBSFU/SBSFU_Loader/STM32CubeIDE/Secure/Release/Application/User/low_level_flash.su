@@ -1,0 +1,4 @@
+low_level_flash.c:521:24:Flash_GetInfo	0	static
+low_level_flash.c:282:16:Flash_Initialize	8	static
+low_level_flash.c:428:16:Flash_EraseSector	40	static
+low_level_flash.c:352:16:Flash_ProgramData	40	static

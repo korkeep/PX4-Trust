@@ -1,0 +1,3 @@
+uart_stdout.c:59:5:_write	32	static
+uart_stdout.c:82:6:stdio_init	8	static
+uart_stdout.c:95:6:stdio_uninit	0	static

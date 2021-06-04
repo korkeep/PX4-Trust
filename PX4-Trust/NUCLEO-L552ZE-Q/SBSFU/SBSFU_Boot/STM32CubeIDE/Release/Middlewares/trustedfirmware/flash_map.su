@@ -1,0 +1,6 @@
+flash_map.c:75:5:flash_area_open	0	static
+flash_map.c:94:6:flash_area_close	0	static
+flash_map.c:99:5:flash_area_read	12	static
+flash_map.c:106:5:flash_area_write	12	static
+flash_map.c:113:5:flash_area_erase	32	static
+flash_map.c:141:10:flash_area_align	8	static

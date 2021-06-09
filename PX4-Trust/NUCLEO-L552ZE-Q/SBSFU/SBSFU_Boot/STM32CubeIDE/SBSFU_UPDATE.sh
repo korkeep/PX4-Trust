@@ -9,8 +9,6 @@ stm32programmercli="STM32_Programmer_CLI"
 connect_no_reset="-c port=SWD mode=UR"
 connect="-c port=SWD mode=UR --hardRst"
 
-# Sungsu changed
-# secbootadd0=0x180030
 slot0=0xc00d000
 slot1=0x0
 slot2=0xc00d000
@@ -20,33 +18,24 @@ loader=0xc078000
 cfg_loader=1
 image_number=1
 
-# slot0=0xc00d000
-# slot1=0x0
-# slot2=0xc00d000
-# slot3=0x0
-# boot=0xc001000
-# loader=0xc078000
-# cfg_loader=1
-# image_number=1
-
-# if [ $image_number == 2 ]; then
-# echo "Write SBSFU_Appli Secure"
-# $stm32programmercli $connect -d $SCRIPTPATH/../../SBSFU_Appli/Binary/sbsfu_s_sign.bin $slot0 -v
-# ret=$?
-# if [ $ret != 0 ]; then
-#   if [ "$1" != "AUTO" ]; then read -p "SBSFU_UPDATE script failed, press a key" -n1 -s; fi
-#   exit 1
-# fi
-# echo "SBSFU_Appli Secure Written"
-# echo "Write SBSFU_Appli NonSecure"
-# $stm32programmercli $connect -d $SCRIPTPATH/../../SBSFU_Appli/Binary/sbsfu_ns_sign.bin $slot1 -v 
-# ret=$?
-# if [ $ret != 0 ]; then
-#   if [ "$1" != "AUTO" ]; then read -p "SBSFU_UPDATE script failed, press a key" -n1 -s; fi
-#   exit 1
-# fi
-# echo "SBSFU_Appli NonSecure Written"
-# fi
+if [ $image_number == 2 ]; then
+echo "Write SBSFU_Appli Secure"
+$stm32programmercli $connect -d $SCRIPTPATH/../../SBSFU_Appli/Binary/sbsfu_s_sign.bin $slot0 -v
+ret=$?
+if [ $ret != 0 ]; then
+  if [ "$1" != "AUTO" ]; then read -p "SBSFU_UPDATE script failed, press a key" -n1 -s; fi
+  exit 1
+fi
+echo "SBSFU_Appli Secure Written"
+echo "Write SBSFU_Appli NonSecure"
+$stm32programmercli $connect -d $SCRIPTPATH/../../SBSFU_Appli/Binary/sbsfu_ns_sign.bin $slot1 -v 
+ret=$?
+if [ $ret != 0 ]; then
+  if [ "$1" != "AUTO" ]; then read -p "SBSFU_UPDATE script failed, press a key" -n1 -s; fi
+  exit 1
+fi
+echo "SBSFU_Appli NonSecure Written"
+fi
 
 if [ $image_number == 1 ]; then
 echo "Write SBSFU_Appli"
@@ -59,10 +48,11 @@ fi
 echo "SBSFU_Appli Written"
 fi
 
-# Sungsu Changed
+
+# Sungsu Added
 # if [ $image_number == 1 ]; then
 # echo "Write NuttX"
-# $stm32programmercli $connect -d $SCRIPTPATH/../../SBSFU_Appli/Binary/nuttx.bin $slot0 -v
+# $stm32programmercli $connect -d $SCRIPTPATH/../../SBSFU_Appli/Binary/nuttx.bin $slot1 -v
 # ret=$?
 # if [ $ret != 0 ]; then
 #   if [ "$1" != "AUTO" ]; then read -p "SBSFU_UPDATE script failed, press a key" -n1 -s; fi
@@ -70,6 +60,7 @@ fi
 # fi
 # echo "NuttX Written"
 # fi
+
 
 # write loader if config loader is active
 if [ $cfg_loader == 1 ]; then

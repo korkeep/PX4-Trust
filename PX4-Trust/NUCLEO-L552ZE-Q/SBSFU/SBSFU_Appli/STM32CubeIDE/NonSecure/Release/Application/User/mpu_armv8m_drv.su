@@ -1,5 +1,0 @@
-mpu_armv8m_drv.c:16:25:mpu_armv8m_enable	0	static,ignoring_inline_asm
-mpu_armv8m_drv.c:50:25:mpu_armv8m_disable	0	static
-mpu_armv8m_drv.c:61:25:mpu_armv8m_region_enable	8	static,ignoring_inline_asm
-mpu_armv8m_drv.c:109:25:mpu_armv8m_region_disable	0	static
-mpu_armv8m_drv.c:135:25:mpu_armv8m_clean	16	static

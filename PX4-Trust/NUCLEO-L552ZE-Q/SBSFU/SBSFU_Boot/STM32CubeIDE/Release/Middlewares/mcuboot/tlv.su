@@ -1,2 +1,0 @@
-tlv.c:36:1:bootutil_tlv_iter_begin	40	static
-tlv.c:91:1:bootutil_tlv_iter_next	40	static

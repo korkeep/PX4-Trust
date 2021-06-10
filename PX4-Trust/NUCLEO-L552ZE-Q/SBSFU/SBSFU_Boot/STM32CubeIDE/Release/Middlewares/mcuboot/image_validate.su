@@ -1,2 +1,0 @@
-image_validate.c:245:1:bootutil_get_img_security_cnt	56	static
-image_validate.c:300:1:bootutil_img_validate	1144	static

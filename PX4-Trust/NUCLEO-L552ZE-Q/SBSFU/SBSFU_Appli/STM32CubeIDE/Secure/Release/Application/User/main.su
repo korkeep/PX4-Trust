@@ -1,4 +1,0 @@
-main.c:242:13:MX_GPIO_Init	56	static
-main.c:277:6:HAL_SYSTICK_Callback	8	static
-main.c:297:6:Error_Handler	8	static
-main.c:68:5:main	144	static,ignoring_inline_asm

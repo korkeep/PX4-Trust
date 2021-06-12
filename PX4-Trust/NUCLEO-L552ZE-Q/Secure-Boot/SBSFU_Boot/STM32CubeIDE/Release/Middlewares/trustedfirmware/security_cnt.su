@@ -1,0 +1,3 @@
+security_cnt.c:36:9:boot_nv_security_counter_init	8	static
+security_cnt.c:48:9:boot_nv_security_counter_get	8	static
+security_cnt.c:73:9:boot_nv_security_counter_update	8	static

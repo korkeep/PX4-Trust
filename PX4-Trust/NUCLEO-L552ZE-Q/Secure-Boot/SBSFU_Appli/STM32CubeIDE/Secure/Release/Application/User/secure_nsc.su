@@ -1,0 +1,2 @@
+secure_nsc.c:50:20:SECURE_RegisterCallback	0	static
+secure_nsc.c:75:20:SECURE_GPIO_Toggle	8	static

@@ -1,0 +1,5 @@
+bl2_nv_services.c:500:17:CalculateCrc	16	static
+bl2_nv_services.c:347:21:tfm_plat_read_nv_counter	48	static
+bl2_nv_services.c:157:21:tfm_plat_init_nv_counter	64	static
+bl2_nv_services.c:269:21:tfm_plat_set_nv_counter	40	static
+bl2_nv_services.c:325:21:tfm_plat_increment_nv_counter	16	static

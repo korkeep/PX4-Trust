@@ -1,0 +1,2 @@
+system_stm32l5xx.c:190:6:SystemInit	8	static
+system_stm32l5xx.c:252:6:SystemCoreClockUpdate	12	static

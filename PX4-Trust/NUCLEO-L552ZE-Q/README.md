@@ -2,7 +2,7 @@
 <img title="NUCLEO-L552ZE-Q" alt="" src="https://user-images.githubusercontent.com/20378368/120424039-94996380-c3a6-11eb-83b4-0d255d1aa05a.png" width="600"/>  
 
 ### RTOS porting
-[**PX4-NuttX**](https://github.com/korkeep/PX4-Trust/tree/main/PX4-Trust/NUCLEO-H745ZI-Q/NuttX) Configure Steps
+[**PX4-NuttX**](https://github.com/korkeep/PX4-Trust/tree/main/PX4-Trust/NUCLEO-L552ZE-Q/NuttX) Configure Steps
 - **Step 1**: Configure Board  
 
   > `$ tools/configure.sh nucleo-l552ze:nsh`

@@ -1,4 +1,4 @@
-### RTOS porting
+## RTOS porting
 - **Step 1**: Configure Board  
 
   > `$ tools/configure.sh nucleo-l552ze:nsh`

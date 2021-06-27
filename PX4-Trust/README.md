@@ -47,7 +47,7 @@
     | Green | D0RX | TX |
     | Blue | GND | GND |
 
-- **Step 8**: Unzip `CDM v2.12.28 WHQL Certified`
+- **Step 8**: Unzip `USB-UART-converter.zip`
 
   > <img title="RTOS-connect" alt="" src="https://user-images.githubusercontent.com/20378368/120428342-70418500-c3ae-11eb-984f-33ca604e0b68.png" width="600"/> 
 

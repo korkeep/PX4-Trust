@@ -10,7 +10,7 @@ connect_no_reset="-c port=SWD mode=UR"
 connect="-c port=SWD mode=UR --hardRst"
 
 slot0=0xc00d000
-slot1=0x0
+slot1=0x08000000
 slot2=0xc00d000
 slot3=0x0
 boot=0xc001000

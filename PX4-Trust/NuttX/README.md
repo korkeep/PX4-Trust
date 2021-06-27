@@ -26,7 +26,7 @@
 
   > <img title="RTOS-build" alt="" src="https://user-images.githubusercontent.com/20378368/120424399-3620b500-c3a7-11eb-82e6-47f1c5fac195.png" width="500"/>  
 
-- **Step 5**: Flash `nuttx.bin` file to **NUCLEO-L552ZE-Q** via `nuttx_upload.sh`  
+- **Step 5**: Flash `nuttx.bin` file to **NUCLEO-L552ZE-Q** via `nuttx_update.sh`  
 
   > <img title="RTOS-upload" alt="" src="https://user-images.githubusercontent.com/20378368/121977436-fef7ce00-cdc0-11eb-9737-e5b1647eb50e.png" width="500"/>  
 

@@ -15,7 +15,7 @@ echo "Write NuttX"
 $stm32programmercli $connect -d $SCRIPTPATH/nuttx.bin $flash -v
 ret=$?
 if [ $ret != 0 ]; then
-  if [ "$1" != "AUTO" ]; then read -p "SBSFU_UPDATE script failed, press a key" -n1 -s; fi
+  if [ "$1" != "AUTO" ]; then read -p "NuttX flashing script failed, press a key" -n1 -s; fi
   exit 1
 fi
 echo "NuttX Written"

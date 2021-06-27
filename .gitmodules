@@ -1,6 +1,0 @@
-[submodule "STM32CubeL5"]
-	path = STM32CubeL5
-	url = https://github.com/STMicroelectronics/STM32CubeL5.git
-[submodule "PX4-FMUv6"]
-	path = PX4-FMUv6
-	url = https://github.com/korkeep/PX4-FMUv6.git

@@ -1,2 +1,0 @@
-secure_nsc.c:48:23:SECURE_Flash_ProgramData	8	static
-secure_nsc.c:62:23:SECURE_Flash_EraseSector	8	static

@@ -1,2 +1,0 @@
-caps.c:20:10:bootutil_get_caps	0	static
-caps.c:67:10:bootutil_get_num_images	0	static

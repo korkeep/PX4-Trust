@@ -1,6 +1,0 @@
-encrypted.c:393:1:boot_enc_set_key	24	static
-encrypted.c:440:1:boot_enc_decrypt	232	static
-encrypted.c:674:1:boot_enc_load	320	static
-encrypted.c:728:1:boot_enc_valid	8	static
-encrypted.c:744:1:boot_encrypt	56	static
-encrypted.c:795:1:boot_enc_zeroize	0	static

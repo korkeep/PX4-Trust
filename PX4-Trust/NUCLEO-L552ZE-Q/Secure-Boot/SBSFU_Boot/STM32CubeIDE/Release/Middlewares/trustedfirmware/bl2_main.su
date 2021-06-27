@@ -1,3 +1,0 @@
-bl2_main.c:81:29:boot_jump_to_next_image	0	static,ignoring_inline_asm
-bl2_main.c:111:13:jumper	0	static,ignoring_inline_asm
-bl2_main.c:179:5:main	32	static,ignoring_inline_asm

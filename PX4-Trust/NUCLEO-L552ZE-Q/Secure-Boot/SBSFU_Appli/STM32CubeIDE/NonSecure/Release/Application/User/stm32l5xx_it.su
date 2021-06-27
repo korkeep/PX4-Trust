@@ -1,8 +1,0 @@
-stm32l5xx_it.c:51:6:NMI_Handler	0	static
-stm32l5xx_it.c:60:6:HardFault_Handler	0	static
-stm32l5xx_it.c:73:6:MemManage_Handler	0	static
-stm32l5xx_it.c:87:6:BusFault_Handler	0	static
-stm32l5xx_it.c:100:6:UsageFault_Handler	0	static
-stm32l5xx_it.c:114:6:DebugMon_Handler	0	static
-stm32l5xx_it.c:125:6:SysTick_Handler	0	static
-stm32l5xx_it.c:142:6:FLASH_IRQHandler	0	static

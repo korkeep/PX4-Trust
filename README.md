@@ -2,8 +2,6 @@
 The **PX4-Trust** project proposes an architecture that can protect core-assets of the drone system, such as private key, user data, and security functions, by utilizing the ARM Trusted Firmware-M function. 🚁🔐  
 
 ## PX4
-<img title="Architecture" alt="PX4" src="https://github.com/korkeep/PX4-Trust/raw/main/Architecture/PX4.png" width="500"/>  
-
 **PX4 Autopilot** is an open-source autopilot system for Unmanned Aerial Vehicle. **PX4 Autopilot** guarantees scalability so that the PX4 ecosystem can be maintained by providing a standard for drone hardware and software.  
 - [PX4 Github](https://github.com/PX4/PX4-Autopilot)
 - [PX4 Autopilot](https://docs.px4.io/master/en/)
